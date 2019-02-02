@@ -15,9 +15,13 @@ class ConfigNames(Config):
     """
     Parameters for names authorization repository
     """
-    repo = ParamCreator.create_existing_file(
+    repository = ParamCreator.create_existing_file(
         help_string="file where authorized strings are located",
         default="/home/mark/.mp3lib_authorized_non_ascii.json",
+    )
+    repository_backup = ParamCreator.create_existing_file(
+        help_string="file where authorized strings are located",
+        default="/home/mark/.mp3lib_authorized_non_ascii.json.back",
     )
     all_over = ParamCreator.create_bool(
         default=False,

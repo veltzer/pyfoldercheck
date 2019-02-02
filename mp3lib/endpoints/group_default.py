@@ -1,3 +1,4 @@
+import json
 import os
 
 from pytconf.config import register_endpoint, register_function_group
@@ -77,16 +78,15 @@ def scan():
     ],
     group=GROUP_NAME_DEFAULT,
 )
-def scan():
+def review_not_ascii():
     # type: () -> None
     """
-    Authorize names with non ascii in them
+    Authorize words with non ascii in them
     Only checks for name not previously authorized
     """
-    bad_characters = set()
-    chars_ok_for_folders = ""
-    chars_ok_for_files = "“”ìú"
-    count = 0
+    # read the previous repository
+    with open(ConfigNames.repository) as f:
+        repository = json.load(f)
     for root, directories, files in os.walk(ConfigRepository.folder):
         for file in files:
             if 'á' in file:
@@ -101,6 +101,7 @@ def scan():
             if not is_ascii(directory, chars_ok_for_folders):
                 full = os.path.join(root, directory)
                 print('folder [{}]'.format(full))
-    print(bad_characters)
-    print("found [{}] appearances".format(count))
-
+    # write the repository back
+    shutils.dsfd
+    with open(ConfigNames.repository, "w") as f:
+        json.dump(repository, f)
