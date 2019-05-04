@@ -27,3 +27,17 @@ class ConfigNames(Config):
         default=False,
         help_string="start from scratch",
     )
+
+
+class Authorized(Config):
+    """
+    stuff which is authorized
+    """
+    chars_ok_for_folders = ParamCreator.create_str(
+        help_string="Which chars are allowed for folders",
+        default=""
+    )
+    chars_ok_for_files = ParamCreator.create_str(
+        help_string="Which chars are allowed for files",
+        default="“”ìú"
+    )

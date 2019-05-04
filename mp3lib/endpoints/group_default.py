@@ -3,10 +3,10 @@ import os
 
 from pytconf.config import register_endpoint, register_function_group
 
-from mp3lib.configs import ConfigRepository, ConfigNames
+from mp3lib.configs import ConfigRepository, ConfigNames, Authorized
 
 GROUP_NAME_DEFAULT = "default"
-GROUP_DESCRIPTION_DEFAULT = "all pytsv commands"
+GROUP_DESCRIPTION_DEFAULT = "all mp3lib commands"
 
 
 def register_group_default():
@@ -48,8 +48,6 @@ def scan():
     Scan the folder
     """
     bad_characters = set()
-    chars_ok_for_folders = ""
-    chars_ok_for_files = "“”ìú"
     count = 0
     for root, directories, files in os.walk(ConfigRepository.folder):
         for file in files:
@@ -57,12 +55,12 @@ def scan():
                 full = os.path.join(root, file)
                 print(file, full)
                 count += 1
-            if not is_ascii(file, chars_ok_for_files):
+            if not is_ascii(file, Authorized.chars_ok_for_files):
                 # full = os.path.join(root, file)
                 # print(file, full)
                 add_non_ascii(bad_characters, file)
         for directory in directories:
-            if not is_ascii(directory, chars_ok_for_folders):
+            if not is_ascii(directory, Authorized.chars_ok_for_folders):
                 full = os.path.join(root, directory)
                 print('folder [{}]'.format(full))
     print(bad_characters)
@@ -87,21 +85,22 @@ def review_not_ascii():
     # read the previous repository
     with open(ConfigNames.repository) as f:
         repository = json.load(f)
+    count = 0
+    bad_characters = set()
     for root, directories, files in os.walk(ConfigRepository.folder):
         for file in files:
             if 'á' in file:
                 full = os.path.join(root, file)
                 print(file, full)
                 count += 1
-            if not is_ascii(file, chars_ok_for_files):
+            if not is_ascii(file, Authorized.chars_ok_for_files):
                 # full = os.path.join(root, file)
                 # print(file, full)
                 add_non_ascii(bad_characters, file)
         for directory in directories:
-            if not is_ascii(directory, chars_ok_for_folders):
+            if not is_ascii(directory, Authorized.chars_ok_for_folders):
                 full = os.path.join(root, directory)
                 print('folder [{}]'.format(full))
     # write the repository back
-    shutils.dsfd
     with open(ConfigNames.repository, "w") as f:
         json.dump(repository, f)
