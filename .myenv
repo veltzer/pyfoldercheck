@@ -1,2 +1,2 @@
-virtual_env_python=/usr/bin/python3.6
+virtual_env_python=/usr/bin/python3.7
 aws_configuration_name=mark_at_mark_veltzer
