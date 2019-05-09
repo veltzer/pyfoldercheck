@@ -1,2 +1,2 @@
 #!/bin/sh
-aws s3 cp -r docs s3://veltzer.info/index.html
+aws s3 cp --recursive docs s3://veltzer.info/
