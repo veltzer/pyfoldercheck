@@ -5,4 +5,4 @@ __pycache__/
 /.pydmt/
 /build/
 /dist/
-/*.egginfo/
+/*.egg-info/
