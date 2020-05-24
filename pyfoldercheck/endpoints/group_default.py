@@ -3,10 +3,10 @@ import os
 
 from pytconf.config import register_endpoint, register_function_group
 
-from mp3lib.configs import ConfigRepository, ConfigNames, Authorized
+from pyfoldercheck.configs import ConfigRepository, ConfigNames, Authorized
 
 GROUP_NAME_DEFAULT = "default"
-GROUP_DESCRIPTION_DEFAULT = "all mp3lib commands"
+GROUP_DESCRIPTION_DEFAULT = "all pyfoldercheck commands"
 
 
 def register_group_default():

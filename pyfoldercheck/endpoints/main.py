@@ -3,7 +3,7 @@ from __future__ import print_function, division
 import pylogconf.core
 from pytconf.config import register_main, get_pytconf
 
-from mp3lib.endpoints.group_default import register_group_default
+from pyfoldercheck.endpoints.group_default import register_group_default
 
 
 def register_all_groups():
