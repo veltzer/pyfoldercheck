@@ -1,3 +1,2 @@
 pytconf
 pylogconf
-awscli
