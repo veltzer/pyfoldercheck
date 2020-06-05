@@ -2,27 +2,28 @@ import setuptools
 
 setuptools.setup(
     # the first three fields are a must according to the documentation
-    name='pyfoldercheck',
-    version='0.0.2',
+    name="pyfoldercheck",
+    version="0.0.2",
     packages=[
         'pyfoldercheck',
         'pyfoldercheck.endpoints',
     ],
     # from here all is optional
-    description='apply a set of checks on files in a folder',
-    long_description='apply a set of checks on files in a folder',
-    author='Mark Veltzer',
-    author_email='mark.veltzer@gmail.com',
-    maintainer='Mark Veltzer',
-    maintainer_email='mark.veltzer@gmail.com',
+    description="apply a set of checks on files in a folder",
+    long_description="apply a set of checks on files in a folder",
+    long_description_content_type="text/x-rst",
+    author="Mark Veltzer",
+    author_email="mark.veltzer@gmail.com",
+    maintainer="Mark Veltzer",
+    maintainer_email="mark.veltzer@gmail.com",
     keywords=[
         'mp3',
         'pdf',
         'collection',
     ],
-    url='https://veltzer.github.io/pyfoldercheck',
-    download_url='https://github.com/veltzer/pyfoldercheck',
-    license='MIT',
+    url="https://veltzer.github.io/pyfoldercheck",
+    download_url="https://github.com/veltzer/pyfoldercheck",
+    license="MIT",
     platforms=[
         'python3',
     ],
@@ -41,8 +42,8 @@ setuptools.setup(
     ],
     data_files=[
     ],
-    entry_points={'console_scripts': [
+    entry_points={"console_scripts": [
         'pyfoldercheck=pyfoldercheck.endpoints.main:main',
     ]},
-    python_requires='>=3.5',
+    python_requires=">=3.5",
 )
