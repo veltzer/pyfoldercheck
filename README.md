@@ -2,14 +2,20 @@
 
 # *pyfoldercheck* project by Mark Veltzer
 
-![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
-![GitHub](https://img.shields.io/github/license/veltzer/pyfoldercheck)
-![PyPI](https://img.shields.io/pypi/v/pyfoldercheck)
+![PyPI - Status](https://img.shields.io/pypi/status/pyfoldercheck)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyfoldercheck)
+![PyPI - License](https://img.shields.io/pypi/l/pyfoldercheck)
+![PyPI - Package Name](https://img.shields.io/pypi/v/pyfoldercheck)
 ![PyPI - Format](https://img.shields.io/pypi/format/pyfoldercheck)
-[![Downloads](https://pepy.tech/badge/pytsv)](https://pepy.tech/project/pyfoldercheck)
-[![Downloads](https://pepy.tech/badge/pytsv/month)](https://pepy.tech/project/pyfoldercheck/month)
-[![Downloads](https://pepy.tech/badge/pytsv/week)](https://pepy.tech/project/pyfoldercheck/week)
 
+![PyPI - Downloads](https://img.shields.io/pypi/dd/pyfoldercheck)
+![PyPI - Downloads](https://img.shields.io/pypi/dw/pyfoldercheck)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pyfoldercheck)
+
+![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
+![Downloads](https://pepy.tech/badge/pyfoldercheck)
+![Downloads](https://pepy.tech/badge/pyfoldercheck/month)
+![Downloads](https://pepy.tech/badge/pyfoldercheck/week)
 
 apply a set of checks on files in a folder
 
