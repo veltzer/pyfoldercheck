@@ -23,7 +23,7 @@ setuptools.setup(
     ],
     url="https://veltzer.github.io/pyfoldercheck",
     download_url="https://github.com/veltzer/pyfoldercheck",
-    license="MIT",
+    # license="MIT",
     platforms=[
         'python3',
     ],
