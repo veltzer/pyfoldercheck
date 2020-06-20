@@ -38,8 +38,6 @@ def has_character(c, s):
     configs=[
         ConfigRepository,
     ],
-    suggest_configs=[
-    ],
     group=GROUP_NAME_DEFAULT,
 )
 def scan():
@@ -71,8 +69,6 @@ def scan():
     configs=[
         ConfigRepository,
         ConfigNames,
-    ],
-    suggest_configs=[
     ],
     group=GROUP_NAME_DEFAULT,
 )
