@@ -1,5 +1,4 @@
 
-
 # *pyfoldercheck* project by Mark Veltzer
 
 ![PyPI - Status](https://img.shields.io/pypi/status/pyfoldercheck)
@@ -17,7 +16,7 @@
 ![Downloads](https://pepy.tech/badge/pyfoldercheck/month)
 ![Downloads](https://pepy.tech/badge/pyfoldercheck/week)
 
+
 apply a set of checks on files in a folder
 
-project website: https://veltzer.github.io/pyfoldercheck
-
+project website: <https://veltzer.github.io/pyfoldercheck>
