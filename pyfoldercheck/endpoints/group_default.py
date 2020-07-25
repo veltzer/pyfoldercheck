@@ -1,7 +1,7 @@
 import json
 import os
 
-from pytconf.config import register_endpoint, register_function_group
+from pytconf import register_endpoint, register_function_group
 
 from pyfoldercheck.configs import ConfigRepository, ConfigNames, Authorized
 

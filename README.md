@@ -20,3 +20,5 @@
 apply a set of checks on files in a folder
 
 project website: <https://veltzer.github.io/pyfoldercheck>
+
+
