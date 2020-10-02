@@ -16,6 +16,8 @@
 ![Downloads](https://pepy.tech/badge/pyfoldercheck/month)
 ![Downloads](https://pepy.tech/badge/pyfoldercheck/week)
 
+[![Known Vulnerabilities](https://snyk.io/test/github/veltzer/pyfoldercheck/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/veltzer/pyfoldercheck?targetFile=requirements.txt)
+
 
 
 apply a set of checks on files in a folder
