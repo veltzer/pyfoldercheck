@@ -10,4 +10,7 @@ Sphinx
 # test requirements
 pylint
 pytest
+pytest-cov
 pyflakes
+pymakehelper
+flake8
