@@ -40,11 +40,16 @@ def has_character(c, s):
     ],
     group=GROUP_NAME_DEFAULT,
 )
-def scan():
-    # type: () -> None
+def scan() -> None:
     """
     Scan the folder
     """
+    bad_characters, count = scan_files()
+    print(bad_characters)
+    print("found [{}] appearances".format(count))
+
+
+def scan_files():
     bad_characters = set()
     count = 0
     for root, directories, files in os.walk(ConfigRepository.folder):
@@ -61,8 +66,7 @@ def scan():
             if not is_ascii(directory, Authorized.chars_ok_for_folders):
                 full = os.path.join(root, directory)
                 print('folder [{}]'.format(full))
-    print(bad_characters)
-    print("found [{}] appearances".format(count))
+    return bad_characters, count
 
 
 @register_endpoint(
@@ -72,8 +76,7 @@ def scan():
     ],
     group=GROUP_NAME_DEFAULT,
 )
-def review_not_ascii():
-    # type: () -> None
+def review_not_ascii() -> None:
     """
     Authorize words with non ascii in them
     Only checks for name not previously authorized
@@ -81,8 +84,8 @@ def review_not_ascii():
     # read the previous repository
     with open(ConfigNames.repository) as f:
         repository = json.load(f)
-    count = 0
     bad_characters = set()
+    count = 0
     for root, directories, files in os.walk(ConfigRepository.folder):
         for file in files:
             if 'á' in file:
