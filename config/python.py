@@ -3,7 +3,7 @@ import config.project
 package_name = config.project.project_name
 
 console_scripts = [
-    'pyfoldercheck=pyfoldercheck.endpoints.main:main',
+    'pyfoldercheck=pyfoldercheck.main:main',
 ]
 
 setup_requires = [

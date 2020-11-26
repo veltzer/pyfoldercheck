@@ -12,7 +12,6 @@ setuptools.setup(
     version="0.0.3",
     packages=[
         'pyfoldercheck',
-        'pyfoldercheck.endpoints',
     ],
     # from here all is optional
     description="apply a set of checks on files in a folder",
@@ -55,7 +54,7 @@ setuptools.setup(
     data_files=[
     ],
     entry_points={"console_scripts": [
-        'pyfoldercheck=pyfoldercheck.endpoints.main:main',
+        'pyfoldercheck=pyfoldercheck.main:main',
     ]},
     python_requires=">=3.6",
 )
