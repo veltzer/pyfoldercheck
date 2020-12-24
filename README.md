@@ -12,11 +12,6 @@
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/pyfoldercheck)
 
 ![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
-![Downloads](https://pepy.tech/badge/pyfoldercheck)
-![Downloads](https://pepy.tech/badge/pyfoldercheck/month)
-![Downloads](https://pepy.tech/badge/pyfoldercheck/week)
-
-[![Known Vulnerabilities](https://snyk.io/test/github/veltzer/pyfoldercheck/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/veltzer/pyfoldercheck?targetFile=requirements.txt)
 
 
 Actions
