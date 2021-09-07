@@ -14,7 +14,6 @@
 ![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
 
 ![build](https://github.com/veltzer/pyfoldercheck/workflows/build/badge.svg)
-
 apply a set of checks on files in a folder
 
 project website: https://veltzer.github.io/pyfoldercheck
