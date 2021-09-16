@@ -25,7 +25,7 @@ def scan_files():
         for directory in directories:
             if not is_ascii(directory, Authorized.chars_ok_for_folders):
                 full = os.path.join(root, directory)
-                print('folder [{}]'.format(full))
+                print(f"folder [{full}]")
     return bad_characters, count
 
 
@@ -38,7 +38,7 @@ def scan_files():
 def scan() -> None:
     bad_characters, count = scan_files()
     print(bad_characters)
-    print("found [{}] appearances".format(count))
+    print(f"found [{count}] appearances")
 
 
 @register_endpoint(
