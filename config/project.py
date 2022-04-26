@@ -23,7 +23,7 @@ project_keywords = [
     "collection",
 ]
 project_license = "MIT"
-project_year_started = "2019"
+project_year_started = 2019
 project_description = project_short_description
 project_platforms = [
     "python3",
