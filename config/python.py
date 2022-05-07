@@ -6,7 +6,7 @@ console_scripts = [
     "pyfoldercheck=pyfoldercheck.main:main",
 ]
 
-run_requires = [
+install_requires = [
     "pytconf",
     "pylogconf",
 ]
