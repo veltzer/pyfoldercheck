@@ -14,3 +14,4 @@ pytest-cov
 pyflakes
 pymakehelper
 flake8
+mypy
