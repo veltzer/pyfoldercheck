@@ -2,18 +2,17 @@ console_scripts = [
     "pyfoldercheck=pyfoldercheck.main:main",
 ]
 dev_requires = [
-    "pyclassifiers",
     "pypitools",
-    "pydmt",
-    "Sphinx",
 ]
 install_requires = [
     "pytconf",
     "pylogconf",
 ]
 make_requires = [
+    "pyclassifiers",
     "pymakehelper",
     "pydmt",
+    "Sphinx",
 ]
 test_requires = [
     "pylint",
