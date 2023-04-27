@@ -5,7 +5,7 @@ import pylogconf.core
 from pytconf import register_endpoint, register_main, config_arg_parse_and_launch
 
 from pyfoldercheck.configs import ConfigRepository, ConfigNames, Authorized
-from pyfoldercheck.static import APP_NAME, VERSION_STR
+from pyfoldercheck.static import APP_NAME, VERSION_STR, DESCRIPTION
 from pyfoldercheck.utils import is_ascii, add_non_ascii
 
 
@@ -62,7 +62,7 @@ def review_not_ascii() -> None:
 
 
 @register_main(
-    main_description="A program to help you out with your mp3 library",
+    main_description=DESCRIPTION,
     app_name=APP_NAME,
     version=VERSION_STR,
 )

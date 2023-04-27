@@ -9,12 +9,12 @@ def get_readme():
 setuptools.setup(
     # the first three fields are a must according to the documentation
     name="pyfoldercheck",
-    version="0.0.4",
+    version="0.0.5",
     packages=[
         "pyfoldercheck",
     ],
     # from here all is optional
-    description="apply a set of checks on files in a folder",
+    description="Pyfoldercheck will apply a set of checks on files in a folder",
     long_description=get_readme(),
     long_description_content_type="text/x-rst",
     author="Mark Veltzer",
