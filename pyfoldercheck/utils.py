@@ -1,3 +1,6 @@
+""" utils.py """
+
+
 def is_ascii(s, exceptions):
     for c in s:
         if ord(c) >= 128 and c not in exceptions:
