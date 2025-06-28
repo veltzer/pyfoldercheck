@@ -1,8 +1,8 @@
 """ python deps for this project """
 
-console_scripts: list[str] = [
-    "pyfoldercheck=pyfoldercheck.main:main",
-]
+scripts: dict[str,str] = {
+    "pyfoldercheck": "pyfoldercheck.main:main",
+}
 
 config_requires: list[str] = [
     "pyclassifiers",
