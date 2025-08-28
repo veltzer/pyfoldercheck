@@ -16,7 +16,7 @@ def scan_files():
     count = 0
     for root, directories, files in os.walk(ConfigRepository.folder):
         for file in files:
-            if 'á' in file:
+            if "á" in file:
                 full = os.path.join(root, file)
                 print(file, full)
                 count += 1
@@ -73,5 +73,5 @@ def main():
     config_arg_parse_and_launch()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
