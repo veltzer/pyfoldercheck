@@ -4,11 +4,11 @@ import json
 import os
 
 import pylogconf.core
-from pytconf import register_endpoint, register_main, config_arg_parse_and_launch
+from pytconf import config_arg_parse_and_launch, register_endpoint, register_main
 
-from pyfoldercheck.configs import ConfigRepository, ConfigNames, Authorized
-from pyfoldercheck.static import APP_NAME, VERSION_STR, DESCRIPTION
-from pyfoldercheck.utils import is_ascii, add_non_ascii
+from pyfoldercheck.configs import Authorized, ConfigNames, ConfigRepository
+from pyfoldercheck.static import APP_NAME, DESCRIPTION, VERSION_STR
+from pyfoldercheck.utils import add_non_ascii, is_ascii
 
 
 def scan_files():

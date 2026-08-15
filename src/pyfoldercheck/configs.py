@@ -1,6 +1,6 @@
 """ configs.py """
 
-from pytconf import ParamCreator, Config
+from pytconf import Config, ParamCreator
 
 
 class ConfigRepository(Config):
