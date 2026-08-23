@@ -5,3 +5,4 @@ KEYWORDS = {
     "pdf",
     "collection",
 }
+PYPI = true
