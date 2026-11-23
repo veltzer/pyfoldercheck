@@ -2,11 +2,7 @@
 
 
 def is_ascii(s, exceptions):
-    for c in s:
-        if ord(c) >= 128 and c not in exceptions:
-            return False
-    return True
-    # return all(ord(c) < 128 for c in s)
+    return all(ord(c) < 128 or c in exceptions for c in s)
 
 
 def add_non_ascii(set_to_add_to, string_to_scan):
