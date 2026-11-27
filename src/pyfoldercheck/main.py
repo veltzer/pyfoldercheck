@@ -21,8 +21,6 @@ def scan_files():
                 print(file, full)
                 count += 1
             if not is_ascii(file, Authorized.chars_ok_for_files):
-                # full = os.path.join(root, file)
-                # print(file, full)
                 add_non_ascii(bad_characters, file)
         for directory in directories:
             if not is_ascii(directory, Authorized.chars_ok_for_folders):
